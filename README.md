@@ -1,0 +1,99 @@
+# GTFreeFlyer's WWII Carrier Recovery Script for DCS World
+This script is for DCS World and will grade your landings on the WWII Essex Carriers
+
+## Table of Contents
+* [Features](#features)
+* [Download](#download)
+* [Installation](#installation)
+* [Flying the Pattern](#flying-the-pattern)
+* [Technical Info. for Scoring](#technical-info-for-scoring)
+* [Contact Info](#contact-info)
+* [Forum Thread](#forum-thread)
+* [Credits](#credits)
+
+## Features
+* Included with the download is:
+   * a .miz ready to fly and practice your landings
+   * the lua script itself which is drop-in ready for your own missions, no lua setup required
+* Tracks your progress around the boat, starting with the initial starboard pass, all the way until catching a wire and clearing the deck quickly.
+* Tracks multiple carriers and pilots. For example, you can have 4 planes landing at each of the 10 carriers in your mission and everyone will be graded.
+* All players see a one-line message with your score.  Only you see a detailed printout of your stats after landing.
+* Carrier pattern is in accordance with USF-77, "Current Tactical Orders, Aircraft Carriers U.S. Fleet", March 1941
+* Detects bolters, noseovers, skidding to a stop, etc.
+* Some additional scoring parameters have been added to help make you a better pilot
+* When using the lua script inside your own missions, it will automatically detect any Essex carriers, and any planes entering the pattern. No setup required. Just drop the script in (see installation guide below)
+  
+## Download
+Source: https://github.com/GTFreeFlyer/DCS_WWII_Carrier_Recovery
+   * Please click the Watch button and Star button at the top of the GitHub page to receive notices when there are updates.  
+   * Please click Issues at the top of the GitHub page to report bugs and request new features.  
+1. From the GitHub page, click Releases on the right side, and click DCSWWIICarrierRecovery_v1.zip to download it. (You do not need to download the Source code zip or tar.gz).    
+2. Extract the .zip anywhere you like on your PC
+3. If you don't already have MIST downloaded to your PC, I have included it in the .zip for you, or get the latest version from https://github.com/mrSkortch/MissionScriptingTools if you use MIST for other things. You only need the single file, mist.lua.  There's no need to download the whole .zip from mrSkortch's GitHub. Click on mist.lua from the list of files you see; this will bring you to the page that shows all 9500+ lines of code.  Press ctrl+shift+S to save the file somewhere on your PC.
+
+## Installation  
+4. Create the 1st trigger:  
+TYPE: ONCE, NAME: Load MIST
+CONDITIONS: TIME MORE, 1 second
+ACTION 1: DO SCRIPT FILE - Navigate to where you saved mist.lua and select it.  
+
+5. Create the 2nd trigger:  
+TYPE: ONCE, NAME: Load Grading Script 
+CONDITIONS: TIME MORE, 5 seconds  (we want to wait a few seconds to make sure all the units have populated in the mission)
+ACTIONS: DO SCRIPT FILE - Navigate to the extracted DCSWWIICarrierRecovery folder and select 'GTFreeFlyers WWII Recovery v1.0.lua' (or whatever the latest version number is).  
+You do not need to open or edit the .lua file. Just load it into the mission.
+
+6. Create the 3rd trigger:  
+TYPE: ONCE, NAME: Load Sounds  
+CONDITIONS: FLAG EQUALS, Flag: 999, Value: 999 (we are creating a flag that will never execute, just to load the sounds into the .miz)  
+ACTIONS: SOUND TO ALL - Navigate to the extracted DCSWWIICarrierRecovery folder and select one of the .ogg files from soundEffects folder. Create another action and select another .ogg from that folder. Repeat until all .ogg files are loaded.  
+
+   Note: This 3rd trigger is actually optional. You may decide not to use these sounds if they interfere with other sounds you load into your mission.
+
+## Setup
+Wait, I said no setup is required!  
+Well, that's true, but I know people like to tweak some things on their own, so I made it possile to adjust a few things.  This step is completely optional.  
+
+7.  Create a 4th trigger:  
+TYPE: ONCE, NAME: Grading Script Settings  
+CONDITIONS: TIME MORE, 6 seconds  (this must come after the script loads)  
+ACTIONS: DO SCRIPT - Then copy/paste the lines below into the text box, and adjust values as desired.  Make sure each parameter begins on a new line.  What you see below are the default, and suggested values.  
+
+InitialTZDistanceBehindCarrier = 0 --feet, distance behind the carrier's stern where the script initialization TZ is  
+InitialTZDistanceStarboard = 950 --feet, distance to the starboard side of the carrier where the script initialization TZ is  
+InitialTZRadius = 900 --feet  
+AirspaceRadius = 3 --nautical miles, radius of the airspace around the carrier where the script will be active. Must encompass the initial TZ  
+AirspaceCeiling = 1000 --feet, ceiling of the airspace around the carrier where the script will be active  
+ScoreSummaryDisplayTime = 60 --seconds, how long to display the score summary after landing, boltering, or taking off again  
+DisplayOtherScores = true --boolean, whether to display a one-liner of other players' scores to each player after they land, bolter, or take off again. If false, players will only see their own score summary.  
+OtherPlayerScoreDisplayTime = 15 --seconds, how long to display other players' one-liner score summaries to all players  
+
+## Flying the Pattern
+![1](BriefingSlides/Slide1.jpg)
+![1](BriefingSlides/Slide2.jpg)
+![1](BriefingSlides/Slide3.jpg)
+![1](BriefingSlides/Slide4.jpg)
+![1](BriefingSlides/Slide5.jpg)
+![1](BriefingSlides/Slide6.jpg)
+![1](BriefingSlides/Slide7.jpg)
+![1](BriefingSlides/Slide8.jpg)
+![1](BriefingSlides/Slide9.jpg)
+![1](BriefingSlides/Slide10.jpg)
+![1](BriefingSlides/Slide11.jpg)
+![1](BriefingSlides/Slide12.jpg)
+
+## Technical Info. for Scoring
+![1](BriefingSlides/Slide13.jpg)
+![1](BriefingSlides/Slide14.jpg)
+
+## Contact Info:
+Contact GTFreeFlyer (Discord or ED Forums) with any questions.  My Discord profile has a link to GT's Runway where you can engage in discussion, and receive update notices, regarding any of my content produced.
+
+## Forum Thread:  
+Source: TBD
+
+## Credits:
+* Inspiration for this from Bankler's Case I Recovery (check it out for modern carrier ops!)
+* All lua scripting by GTFreeFlyer
+* Consulting by subject matter expert, Foxtrot, Naval Aviation historian at a well-known museum
+* Mission testing by Foxtrot and Toro
