@@ -1,6 +1,9 @@
 # GTFreeFlyer's WWII Carrier Recovery Script for DCS World
 This script is for DCS World and will grade your landings on the WWII Essex Carriers
 
+## PLEASE NOTE:
+The script is not yet available to public. You will not find it in this repo. For a limited time, it is available to play with on vCTF-58's server. The Virtual Carrier Task Force's aim is to recreate the Pacific War as accurately as possible, and they are the best group to fly with, and have the nicest and most competent leaders and members.
+
 ## Table of Contents
 * [Features](#features)
 * [Download](#download)
