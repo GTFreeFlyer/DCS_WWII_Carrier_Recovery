@@ -78,12 +78,12 @@ OtherPlayerScoreDisplayTime = 15 --seconds, how long to display other players' o
 ## Flying the Pattern
 * To get the script started, you must fly through the initial trigger zone within certain parameters. (See the first briefing slide below, blue background).
 * You will receive confirmation that the script has started for you when you see the carrier's BRC (Basic Recovery Course) and WOD (Wind Over Deck) displayed in the top-right.
-![WOD](screenshots/ScriptRunning.jpg)
-* You will receive your score after you bolter, or after you taxi forward to the front 25% of the ship and come to a stop. (A terrible approach was flown here so that all the details would be displayed for this example. You shall do better!)
-![Bad](screenshots/TerribleApproach.jpg)
-* Bolters and wave-offs will be scored as bolters, and if you re-enter the pattern the proper way (fly upwind, turn left to re-enter the landing pattern), then you will not receive another score when landing.  If you want another scoring attempt, you must enter through the trigger zone again and begin with the initial pass.
-* If you crash, you won't receive a score. Maybe a proper burial at sea, but no score. Don't crash! However, if you want an idea of how you did, review your dcs.log for the play-by-play details. It's located in your ...\Saved Games\DCS\Logs
-![Log](screenshots/log.jpg)
+![WOD](screenshots/ScriptRunning.jpg)  
+* You will receive your score after you bolter, or after you taxi forward to the front 25% of the ship and come to a stop. (A terrible approach was flown here so that all the details would be displayed for this example. You shall do better!)  
+![Bad](screenshots/TerribleApproach.jpg)  
+* Bolters and wave-offs will be scored as bolters, and if you re-enter the pattern the proper way (fly upwind, turn left to re-enter the landing pattern), then you will not receive another score when landing.  If you want another scoring attempt, you must enter through the trigger zone again and begin with the initial pass.  
+* If you crash, you won't receive a score. Maybe a proper burial at sea, but no score. Don't crash! However, if you want an idea of how you did, review your dcs.log for the play-by-play details. It's located in your ...\Saved Games\DCS\Logs  
+![Log](screenshots/log.jpg)  
 
 
 ![1](BriefingSlides/Slide1.jpg)
