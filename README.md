@@ -18,9 +18,9 @@ The script is not yet available to public. You will not find it in this reposito
 ## Features
 * Tracks your progress around the boat, starting with the initial starboard pass, all the way until catching a wire and clearing the deck quickly.
 * Tracks multiple carriers and pilots. For example, you can have 4 planes landing at each of the 10 carriers in your mission and everyone will be graded.
-* All players see a one-line message with your score.  Only you see a detailed printout of your stats after landing.
+* All players see a one-line message with your score.  Only you see the detailed printout of your stats after landing.
 * Carrier pattern is in accordance with USF-77, "Current Tactical Orders, Aircraft Carriers U.S. Fleet", March 1941
-* Detects bolters, noseovers, skidding to a stop, etc.
+* Detects which wire you caught, bolters, noseovers, skidding to a stop, etc.
 * Some additional scoring parameters have been added to help make you a better pilot
 * When using the lua script inside your own missions, it will automatically detect any Essex carriers, and any planes entering the pattern. No setup required. Just drop the script in (see installation guide below)
 * Included with the download is:
@@ -81,7 +81,7 @@ OtherPlayerScoreDisplayTime = 15 --seconds, how long to display other players' o
 ![WOD](screenshots/ScriptRunning.jpg)  
 * You will receive your score after you bolter, or after you taxi forward to the front 25% of the ship and come to a stop. (A terrible approach was flown here so that all the details would be displayed for this example. You shall do better!)  
 ![Bad](screenshots/TerribleApproach.jpg)  
-* Bolters and wave-offs will be scored as bolters, and if you re-enter the pattern the proper way (fly upwind, turn left to re-enter the landing pattern), then you will not receive another score when landing.  If you want another scoring attempt, you must enter through the trigger zone again and begin with the initial pass.  
+* Wave-offs will be scored as bolters, and if you re-enter the pattern the proper way (fly upwind, turn left to re-enter the landing pattern), then you will not receive another score when landing.  If you want another scoring attempt, you must enter through the trigger zone again and begin with the initial pass.  
 * If you crash, you won't receive a score. Maybe a proper burial at sea, but no score. Don't crash! However, if you want an idea of how you did, review your dcs.log for the play-by-play details. It's located in your ...\Saved Games\DCS\Logs  
 ![Log](screenshots/log.jpg)  
 
