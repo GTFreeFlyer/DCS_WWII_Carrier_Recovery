@@ -109,7 +109,7 @@ Contact GTFreeFlyer (Discord or ED Forums) with any questions.  My Discord profi
 ![15](BriefingSlides/Slide15.jpg)
 
 ## Forum Thread:  
-Source: TBD
+https://forum.dcs.world/topic/387076-wwii-carrier-recovery-by-gtfreeflyer-grading-script/
 
 ## Support Me:  
 Scripts like these take many hours for development, debugging, testing, documention, etc. I'm happy to provide my work to the DCS community for free, but of course, I wouldn't be lying if I said a thanks, or a donation, would keep me fueled up for more development :) If you feel that this script has helped you become a better pilot, please keep this in mind.
