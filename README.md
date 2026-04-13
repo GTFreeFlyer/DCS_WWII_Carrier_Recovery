@@ -76,6 +76,8 @@ DisplayOtherScores = true --boolean, whether to display a one-liner of other pla
 OtherPlayerScoreDisplayTime = 15 --seconds, how long to display other players' one-liner score summaries to all players   -->
 
 ## Flying the Pattern
+Video tutorial by vCTF-58: https://youtu.be/XJ7T8LTq7Y0?si=9prA_tbjedNAvJGW
+
 * To get the script started, you must fly through the initial trigger zone within certain parameters. (See the first briefing slide below, blue background).
 * You will receive confirmation that the script has started for you when you see the carrier's BRC (Basic Recovery Course) and WOD (Wind Over Deck) displayed in the top-right.
 ![WOD](screenshots/ScriptRunning.jpg)  
