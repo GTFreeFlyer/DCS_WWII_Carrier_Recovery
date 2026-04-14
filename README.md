@@ -79,7 +79,7 @@ OtherPlayerScoreDisplayTime = 15 --seconds, how long to display other players' o
 Video tutorial by vCTF-58: https://youtu.be/XJ7T8LTq7Y0?si=9prA_tbjedNAvJGW
 
 * To get the script started, you must fly through the initial trigger zone within certain parameters. (See the first briefing slide below, blue background).
-* You will receive confirmation that the script has started for you when you see the carrier's BRC (Basic Recovery Course) and WOD (Wind Over Deck) displayed in the top-right.
+* You will receive confirmation that the script has started for you when you see the carrier's BRC (Base Recovery Course) and WOD (Wind Over Deck) displayed in the top-right.
 ![WOD](screenshots/ScriptRunning.jpg)  
 * You will receive your score after you bolter, takeoff again, or after you taxi forward to the front 25% of the ship and come to a stop. Coming to a stop at the front of the boat is optional as you may takeoff again straight after catching a wire without incurring a penalty. (A terrible approach was flown here so that all the details would be displayed for this example. You shall do better!)  
 ![Bad](screenshots/TerribleApproach.jpg)  
