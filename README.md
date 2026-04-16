@@ -39,7 +39,7 @@ The script is not yet available to public. You will not find it in this reposito
   
 ### Other:
 * When using this lua script inside your own missions, it will automatically detect any Essex carriers, and any planes in the carrier's airspace or entering the pattern. No setup required. Just drop the script in (see installation guide below)
-* Both features above have settings to exclude specific carrier groups and/or specific carrier units. See Step 7 below for the two settings you need.
+* Both features above have settings to exclude specific carrier groups and/or specific carrier units. See [Step 7](#setup) below for the two settings you need.
 * Included with the download is:
    * a .miz ready to fly and practice your landings
    * the lua script itself which is drop-in-ready for your own missions, no lua setup required
@@ -129,7 +129,7 @@ Video tutorial by vCTF-58: https://youtu.be/XJ7T8LTq7Y0?si=9prA_tbjedNAvJGW
 There's not much to this that isn't already explained in the [Features](#carrier-auto-wind-alignment-feature) above.  
 All you need to do is make sure your carrier has at least one waypoint to go to in the Mission Editor so that it moves along.  
 Everything about this feature is automatic.  
-You can turn this feature on/off, or exclude specific groups or units if desired.  See step 7 above for the settings you need to define.
+You can turn this feature on/off, or exclude specific groups or units if desired.  See [Step 7](#setup) above for the settings you need to define.
 
 ## Contact Info:
 Contact GTFreeFlyer (Discord or ED Forums) with any questions.  My Discord profile has a link to GT's Runway where you can engage in discussion, and receive update notices, regarding any of my content produced, or use the QR below.
