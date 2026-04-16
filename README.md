@@ -22,7 +22,7 @@ The script is not yet available to public. You will not find it in this reposito
 
 ## Features
 
-### Carrier Recovery Grading Features:
+### Carrier Recovery Grading Feature:
 * Tracks your progress around the boat, starting with the initial starboard pass, all the way until catching a wire and clearing the deck quickly.
 * Tracks multiple carriers and pilots. For example, you can have 4 planes landing at each of the 10 carriers in your mission and everyone will be graded.
 * All players see a one-line message with your score.  Only you see the detailed printout of your stats after landing.
