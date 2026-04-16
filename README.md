@@ -1,7 +1,7 @@
 # GTFreeFlyer's WWII Carrier Recovery Script for DCS World
 This script is for DCS World and has two main functions:  
   1. It will grade your landings on the WWII Essex Carriers only (this is not for modern carriers)
-  2. It will make aircraft carrier groups automatically turn into the wind and adjust speed to provide a user-specified WOD (Wind Over Deck) whenever aircraft of the same coalition are detecct within X miles
+  2. It will make aircraft carrier groups automatically turn into the wind and adjust speed to provide an appropriate WOD (Wind Over Deck) whenever aircraft of the same coalition are detected nearby
   
 More details are below...
 
