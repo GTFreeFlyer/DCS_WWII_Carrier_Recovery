@@ -79,7 +79,7 @@ I recommend skipping this entirely and just using the default values so that the
 7.  Create a 1.5th (is that a real number?) trigger:  
 (This must get loaded before the 2nd trigger above, i.e. before the lua script loads)   
 TYPE: ONCE, NAME: WWII Carrier Recovery Settings   
-CONDITIONS: TIME MORE, 6 seconds  (this must come after the script loads)   
+CONDITIONS: TIME MORE, 4 seconds  (this must load after MIST, and before the main script)   
 ACTIONS: DO SCRIPT - Then copy/paste the lines below into the text box, and adjust values as desired.  Make sure each parameter begins on a new line.  What you see below are the default, and suggested values.  You can pick and choose which lines you want to copy, and they do not have to be in the same order as below. Each line below will override the default value in the script.  
 
 InitialTZDistanceBehindCarrier = 0 --feet, distance behind the carrier's stern where the script initialization TZ is  
