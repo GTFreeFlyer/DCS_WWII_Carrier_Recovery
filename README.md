@@ -127,7 +127,7 @@ Video tutorial by vCTF-58: https://youtu.be/XJ7T8LTq7Y0?si=9prA_tbjedNAvJGW
 ![14](BriefingSlides/Slide14.jpg)
 
 ## Carrier Auto Wind Alignment
-There's not much to this that isn't already explained in the [Features](#carrier-auto-turn-into-the-wind-feature:) above.  
+There's not much to this that isn't already explained in the [Features](#carrier-auto-wind-alignment-feature:) above.  
 All you need to do is make sure your carrier has at least one waypoint to go to in the Mission Editor so that it moves along.  
 Everything about this feature is automatic.  
 You can turn this feature on/off, or exclude specific groups or units if desired.  See step 7 above for the settings you need to define.
