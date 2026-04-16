@@ -53,50 +53,50 @@ Source: https://github.com/GTFreeFlyer/DCS_WWII_Carrier_Recovery
 2. Extract the .zip anywhere you like on your PC
 3. If you don't already have MIST downloaded to your PC, I have included it in the .zip for you, or get the latest version from https://github.com/mrSkortch/MissionScriptingTools if you use MIST for other things. You only need the single file, mist.lua.  There's no need to download the whole .zip from mrSkortch's GitHub. Click on mist.lua from the list of files you see; this will bring you to the page that shows all 9500+ lines of code.  Press ctrl+shift+S to save the file somewhere on your PC.
 
-## Installation 
-(THE ORDER OF THESE TRIGGERS MATTERS!)
-
+## Installation  
+(THE ORDER OF THESE TRIGGERS MATTERS!)  
+  
 4. Create the 1st trigger:  
-TYPE: ONCE, NAME: Load MIST
-CONDITIONS: TIME MORE, 1 second
+TYPE: ONCE, NAME: Load MIST  
+CONDITIONS: TIME MORE, 1 second  
 ACTION 1: DO SCRIPT FILE - Navigate to where you saved mist.lua and select it.  
 
 5. Create the 2nd trigger:  
-TYPE: ONCE, NAME: Load Grading Script 
-CONDITIONS: TIME MORE, 5 seconds  (we want to wait a few seconds to make sure all the units have populated in the mission)
-ACTIONS: DO SCRIPT FILE - Navigate to the extracted DCSWWIICarrierRecovery folder and select 'GTFreeFlyers WWII Recovery v1.0.lua' (or whatever the latest version number is).  
-You do not need to open or edit the .lua file. Just load it into the mission.
+TYPE: ONCE, NAME: Load Grading Script  
+CONDITIONS: TIME MORE, 5 seconds  (we want to wait a few seconds to make sure all the units have populated in the mission)  
+ACTIONS: DO SCRIPT FILE - Navigate to the extracted DCSWWIICarrierRecovery folder and select 'GTFreeFlyers WWII Recovery v1.0.lua' (or whatever the latest version number is).   
+You do not need to open or edit the .lua file. Just load it into the mission.  
 
 6. Create the 3rd trigger (optional, and recommended, if you want the sound effects):  
 TYPE: ONCE, NAME: Load Sounds  
-CONDITIONS: FLAG EQUALS, Flag: 999, Value: 999 (we are creating a flag that will never execute, but this is what is required to load the sounds into the .miz)
-ACTIONS: SOUND TO ALL - Navigate to the extracted DCSWWIICarrierRecovery folder and select one of the .ogg files from soundEffects folder. Create another action and select another .ogg from that folder. Repeat until all .ogg files are loaded.  
-
-## Setup
+CONDITIONS: FLAG EQUALS, Flag: 999, Value: 999 (we are creating a flag that will never execute, but this is what is required to load the sounds into the .miz)  
+ACTIONS: SOUND TO ALL - Navigate to the extracted DCSWWIICarrierRecovery folder and select one of the .ogg files from soundEffects folder. Create another action and select another .ogg from that folder. Repeat until all .ogg files are loaded.    
+  
+## Setup  
 Wait, I said no setup is required!  
 Well, that's true, but I know people like to tweak some things on their own, so I made it possile to adjust a few things.  This step is completely optional.  
-I recommend skipping this entirely and just using the default values so that the behavior of the script matches the documentation.  If you still feel the need to change things later on after you get used to the script, go ahead.
+I recommend skipping this entirely and just using the default values so that the behavior of the script matches the documentation.  If you still feel the need to change things later on after you get used to the script, go ahead.  
 
-7.  Create a 1.5th (is that a real number?) trigger:  (This must get loaded before the 2nd trigger above, i.e. before the lua script loads)
-TYPE: ONCE, NAME: Grading Script Settings  
-CONDITIONS: TIME MORE, 6 seconds  (this must come after the script loads)  
-ACTIONS: DO SCRIPT - Then copy/paste the lines below into the text box, and adjust values as desired.  Make sure each parameter begins on a new line.  What you see below are the default, and suggested values.  You can pick and choose which lines you want to copy, and they do not have to be in the same order as below. Each line below will override the default value in the script.
+7.  Create a 1.5th (is that a real number?) trigger:  (This must get loaded before the 2nd trigger above, i.e. before the lua script loads)  
+TYPE: ONCE, NAME: Grading Script Settings   
+CONDITIONS: TIME MORE, 6 seconds  (this must come after the script loads)   
+ACTIONS: DO SCRIPT - Then copy/paste the lines below into the text box, and adjust values as desired.  Make sure each parameter begins on a new line.  What you see below are the default, and suggested values.  You can pick and choose which lines you want to copy, and they do not have to be in the same order as below. Each line below will override the default value in the script.  
 
 InitialTZDistanceBehindCarrier = 0 --feet, distance behind the carrier's stern where the script initialization TZ is  
 InitialTZDistanceStarboard = 950 --feet, distance to the starboard side of the carrier where the script initialization TZ is  
 InitialTZRadius = 900 --feet  
-AirspaceRadius = 10 --nautical miles, radius of the airspace around the carrier where the grading script will be active, and where the carrier will turn into the wind if there's a plane inside. Must encompass the initial TZ
-AirspaceCeiling = 2500 --feet, ceiling of the airspace, as defined in the AirspaceRadius setting above
+AirspaceRadius = 10 --nautical miles, radius of the airspace around the carrier where the grading script will be active, and where the carrier will turn into the wind if there's a plane inside. Must encompass the initial TZ  
+AirspaceCeiling = 2500 --feet, ceiling of the airspace, as defined in the AirspaceRadius setting above  
 ScoreSummaryDisplayTime = 60 --seconds, how long to display the score summary after landing, boltering, or taking off again  
 DisplayOtherScores = true --boolean, whether to display a one-liner of other players' scores to each player after they land, bolter, or take off again. If false, players will only see their own score summary.  
-OtherPlayerScoreDisplayTime = 15 --seconds, how long to display other players' one-liner score summaries to all players
-CarrierAutoTurn = true --true or false. If true the carrier will automatically turn into the wind when a plane enters the airspace defined above. If false, this feature is disabled.
-CarrierTargetWOD = 26 --knots Wind Over Deck that you want the carriers to try and achieve when they automatically reposition themselves into the wind, if the CarrierAutoTurn above is true. Note: If your carrier group contains a slow ship like the Samuel Chase, etc., then it may prevent the entire ship group from reaching the desired speed.
-ExcludeGroupNames = {"GroupNameToExclude1", "GroupNameToExclude2", "etc"} --list of carrier group names that the script should ignore
-ExcludeUnitNames = {"UnitNameToExclude1", "UnitNameToExclude2", "etc"} --list of carrier unit names that the script should ignore. There's no need to specify a unit that is part of an excluded group in the setting above.
+OtherPlayerScoreDisplayTime = 15 --seconds, how long to display other players' one-liner score summaries to all players  
+CarrierAutoTurn = true --true or false. If true the carrier will automatically turn into the wind when a plane enters the airspace defined above. If false, this feature is disabled.  
+CarrierTargetWOD = 26 --knots Wind Over Deck that you want the carriers to try and achieve when they automatically reposition themselves into the wind, if the CarrierAutoTurn above is true. Note: If your carrier group contains a slow ship like the Samuel Chase, etc., then it may prevent the entire ship group from reaching the desired speed.  
+ExcludeGroupNames = {"GroupNameToExclude1", "GroupNameToExclude2", "etc"} --list of carrier group names that the script should ignore  
+ExcludeUnitNames = {"UnitNameToExclude1", "UnitNameToExclude2", "etc"} --list of carrier unit names that the script should ignore. There's no need to specify a unit that is part of an excluded group in the setting above.  
 
-## Flying the Pattern
-Video tutorial by vCTF-58: https://youtu.be/XJ7T8LTq7Y0?si=9prA_tbjedNAvJGW
+## Flying the Pattern  
+Video tutorial by vCTF-58: https://youtu.be/XJ7T8LTq7Y0?si=9prA_tbjedNAvJGW  
 
 * To get the script started, you must fly through the initial trigger zone within certain parameters. (See the first briefing slide below, blue background).
 * You will receive confirmation that the script has started for you when you see the carrier's BRC (Base Recovery Course) and WOD (Wind Over Deck) displayed in the top-right.
