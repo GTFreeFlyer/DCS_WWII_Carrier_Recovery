@@ -14,7 +14,7 @@ The script is not yet available to public. You will not find it in this reposito
 * [Installation](#installation)
 * [Flying the Pattern](#flying-the-pattern)
 * [Technical Info. for Scoring](#technical-info-for-scoring)
-* [Carrier Auto-Turn Into the Wind](carrier-auto-turn-into-the-wind)
+* [Carrier Auto Wind Alignment](carrier-auto-wind-alignment)
 * [Contact Info](#contact-info)
 * [Forum Thread](#forum-thread)
 * [Support Me](#support-me)
@@ -30,7 +30,7 @@ The script is not yet available to public. You will not find it in this reposito
 * Detects which wire you caught, bolters, noseovers, skidding to a stop, etc.
 * Some additional scoring parameters have been added to help make you a better pilot
   
-### Carrier Auto-Turn Into the Wind Feature:
+### Carrier Auto Wind Alignment Feature:
 * Aircraft carrier groups automatically turn into the wind and adjust speed to provide a user-specified WOD (Wind Over Deck), 26 knots by default, whenever aircraft of the same coalition are detected within 10 miles, below 2,500 feet (by default)
 * No waypoint tricks are required in the Mission Editor. The script will override whatever waypoints you have set up and send the aircraft carrier group upwind, then will restore the original waypoint plan once all aircraft have left the airspace, and resume to the waypoint it was previously heading to.
 * When a player enters a carrier group's airspace, a text message appears letting pilots know the group is turning into the wind, and gives them the expected BRC and current altimeter setting.
@@ -125,7 +125,7 @@ Video tutorial by vCTF-58: https://youtu.be/XJ7T8LTq7Y0?si=9prA_tbjedNAvJGW
 ![13](BriefingSlides/Slide13.jpg)
 ![14](BriefingSlides/Slide14.jpg)
 
-## Carrier Auto-Turn Into the Wind
+## Carrier Auto Wind Alignment
 There's not much to this that isn't already explained in the [Features](#carrier-auto-turn-into-the-wind-feature:) above.  
 All you need to do is make sure your carrier has at least one waypoint to go to in the Mission Editor so that it moves along.  
 Everything about this feature is automatic.  
