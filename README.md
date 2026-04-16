@@ -31,7 +31,7 @@ The script is not yet available to public. You will not find it in this reposito
 * Some additional scoring parameters have been added to help make you a better pilot
   
 ### Carrier Auto-Turn Into the Wind Feature:
-* Aircraft carrier groups automatically turn into the wind and adjust speed to provide a user-specified WOD (Wind Over Deck) whenever aircraft of the same coalition are detected within X miles, below Y feet. (X,Y are user-defined)
+* Aircraft carrier groups automatically turn into the wind and adjust speed to provide a user-specified WOD (Wind Over Deck), 26 knots by default, whenever aircraft of the same coalition are detected within 10 miles, below 2,500 feet (by default)
 * No waypoint tricks are required in the Mission Editor. The script will override whatever waypoints you have set up and send the aircraft carrier group upwind, then will restore the original waypoint plan once all aircraft have left the airspace, and resume to the waypoint it was previously heading to.
 * When a player enters a carrier group's airspace, a text message appears letting pilots know the group is turning into the wind, and gives them the expected BRC and current altimeter setting.
 * Works by taking a measurement of the current wind speed, wind direction, temperature and pressure at the carrier's current location at the time it needs to turn into the wind.
