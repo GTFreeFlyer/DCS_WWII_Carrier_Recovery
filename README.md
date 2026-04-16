@@ -14,7 +14,7 @@ The script is not yet available to public. You will not find it in this reposito
 * [Installation](#installation)
 * [Flying the Pattern](#flying-the-pattern)
 * [Technical Info. for Scoring](#technical-info-for-scoring)
-* [Carrier Auto Wind Alignment](carrier-auto-wind-alignment)
+* [Carrier Auto Wind Alignment](#carrier-auto-wind-alignment)
 * [Contact Info](#contact-info)
 * [Forum Thread](#forum-thread)
 * [Support Me](#support-me)
@@ -29,7 +29,6 @@ The script is not yet available to public. You will not find it in this reposito
 * Carrier landing pattern is in accordance with USF-77, "Current Tactical Orders, Aircraft Carriers U.S. Fleet", March 1941
 * Detects which wire you caught, bolters, noseovers, skidding to a stop, etc.
 * Some additional scoring parameters have been added to help make you a better pilot
-  
 ### Carrier Auto Wind Alignment Feature:
 * Aircraft carrier groups automatically turn into the wind and adjust speed to provide a user-specified WOD (Wind Over Deck), 26 knots by default, whenever aircraft of the same coalition are detected within 10 miles, below 2,500 feet (by default)
 * No waypoint tricks are required in the Mission Editor. The script will override whatever waypoints you have set up and send the aircraft carrier group upwind, then will restore the original waypoint plan once all aircraft have left the airspace, and resume to the waypoint it was previously heading to.
@@ -127,7 +126,7 @@ Video tutorial by vCTF-58: https://youtu.be/XJ7T8LTq7Y0?si=9prA_tbjedNAvJGW
 ![14](BriefingSlides/Slide14.jpg)
 
 ## Carrier Auto Wind Alignment
-There's not much to this that isn't already explained in the [Features](#carrier-auto-wind-alignment-feature:) above.  
+There's not much to this that isn't already explained in the [Features](#carrier-auto-wind-alignment-feature) above.  
 All you need to do is make sure your carrier has at least one waypoint to go to in the Mission Editor so that it moves along.  
 Everything about this feature is automatic.  
 You can turn this feature on/off, or exclude specific groups or units if desired.  See step 7 above for the settings you need to define.
