@@ -62,7 +62,7 @@ CONDITIONS: TIME MORE, 1 second
 ACTION 1: DO SCRIPT FILE - Navigate to where you saved mist.lua and select it.  
 
 5. Create the 2nd trigger:  
-TYPE: ONCE, NAME: Load Grading Script  
+TYPE: ONCE, NAME: Load WWII Carrier Recovery Script  
 CONDITIONS: TIME MORE, 5 seconds  (we want to wait a few seconds to make sure all the units have populated in the mission)  
 ACTIONS: DO SCRIPT FILE - Navigate to the extracted DCSWWIICarrierRecovery folder and select 'GTFreeFlyers WWII Recovery v1.0.lua' (or whatever the latest version number is).   
 You do not need to open or edit the .lua file. Just load it into the mission.  
@@ -77,8 +77,9 @@ Wait, I said no setup is required!
 Well, that's true, but I know people like to tweak some things on their own, so I made it possile to adjust a few things.  This step is completely optional.  
 I recommend skipping this entirely and just using the default values so that the behavior of the script matches the documentation.  If you still feel the need to change things later on after you get used to the script, go ahead.  
 
-7.  Create a 1.5th (is that a real number?) trigger:  (This must get loaded before the 2nd trigger above, i.e. before the lua script loads)  
-TYPE: ONCE, NAME: Grading Script Settings   
+7.  Create a 1.5th (is that a real number?) trigger:  
+(This must get loaded before the 2nd trigger above, i.e. before the lua script loads)   
+TYPE: ONCE, NAME: WWII Carrier Recovery Settings   
 CONDITIONS: TIME MORE, 6 seconds  (this must come after the script loads)   
 ACTIONS: DO SCRIPT - Then copy/paste the lines below into the text box, and adjust values as desired.  Make sure each parameter begins on a new line.  What you see below are the default, and suggested values.  You can pick and choose which lines you want to copy, and they do not have to be in the same order as below. Each line below will override the default value in the script.  
 
