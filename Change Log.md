@@ -3,7 +3,7 @@
 GTFreeFlyer's WWII Carrier Recovery Script for DCS World, created March 2026
 -------------------------------------------------------------------------------------  
 v1.1
-Changes by GTFreeFlyer, Date TBD
+Changes by GTFreeFlyer, April 16, 2026
    * Added function to automatically turn carrier group into the wind when a plane is within 10 miles, under 2,500 feet. See readme on how this works
    * Added two new globals that allow you to exclude a specific carrier unit or carrier group. See readme on how to set this up
    * Removed summary line mentioning you can also find the summary in the log (it will still show up in the log)
