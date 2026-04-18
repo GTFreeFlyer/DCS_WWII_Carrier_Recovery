@@ -3,7 +3,7 @@
 GTFreeFlyer's WWII Carrier Recovery Script for DCS World, created March 2026  
 -------------------------------------------------------------------------------------  
 v1.2  
-Changes by GTFreeFlyer, TBD  
+Changes by GTFreeFlyer, April 18, 2026
   * Added functionality to return the carrier groups back to their original fleet position.
   * Added new global setting, NotificationSound, in case you have a different .ogg other than notification.ogg that you'd prefer to use. See readme.  
 -------------------------------------------------------------------------------------  

@@ -30,7 +30,8 @@ The script is not yet available to public. You will not find it in this reposito
 * Detects which wire you caught, bolters, noseovers, skidding to a stop, etc.
 * Some additional scoring parameters have been added to help make you a better pilot
 ### Carrier Auto Wind Alignment Feature:
-* Aircraft carrier groups automatically turn into the wind and adjust speed to provide a user-specified WOD (Wind Over Deck), 26 knots by default, whenever aircraft of the same coalition are detected within 10 miles, below 2,500 feet (by default)
+* Aircraft carrier groups automatically separate from the fleet and turn into the wind and adjust speed to provide a user-specified WOD (Wind Over Deck), 26 knots by default, whenever aircraft of the same coalition are detected within 10 miles, below 2,500 feet (by default).  If no fleet, then they will just resume back to where they were going on their own.
+* Carrier groups will return to their fleet positions after all planes have left the airspace, if they were part of another fleet group.
 * No waypoint tricks are required in the Mission Editor. The script will override whatever waypoints you have set up and send the aircraft carrier group upwind, then will restore the original waypoint plan once all aircraft have left the airspace, and resume to the waypoint it was previously heading to.
 * When a player enters a carrier group's airspace, a text message appears letting pilots know the group is turning into the wind, and gives them the expected BRC and current altimeter setting.
 * Works by taking a measurement of the current wind speed, wind direction, temperature and pressure at the carrier's current location at the time it needs to turn into the wind.
@@ -129,7 +130,15 @@ Video tutorial by vCTF-58: https://youtu.be/XJ7T8LTq7Y0?si=9prA_tbjedNAvJGW
 There's not much to this that isn't already explained in the [Features](#carrier-auto-wind-alignment-feature) above.  
 All you need to do is make sure your carrier has at least one waypoint to go to in the Mission Editor so that it moves along.  
 Everything about this feature is automatic.  
-You can turn this feature on/off, or exclude specific groups or units if desired.  See [Step 7](#setup) above for the settings you need to define.
+  
+You can turn this feature on/off, or exclude specific groups or units if desired.  See [Step 7](#setup) above for the settings you need to define.  
+  
+Optional, but recommended for realism:  
+If you place the carrier group within 10 miles (default value, adjustable by FleetDetectDistance global setting) of another ship group that does not contain carriers, then the script will:  
+  * automatically assume the carrier group is part of that fleet
+  * will override the carrier group's waypoints with the fleet's waypoints, regardless of what you set up in the mission editor
+  * will remember the position of the carrier group relative to the fleet the way it was set up in the mission editor
+  * will return the carrier group to its fleet position after all aircraft have departed its airspace
 
 ## Contact Info:
 Contact GTFreeFlyer (Discord or ED Forums) with any questions.  My Discord profile has a link to GT's Runway where you can engage in discussion, and receive update notices, regarding any of my content produced, or use the QR below.
