@@ -30,7 +30,7 @@ The script is not yet available to public. You will not find it in this reposito
 * Detects which wire you caught, bolters, noseovers, skidding to a stop, etc.
 * Some additional scoring parameters have been added to help make you a better pilot
 ### Carrier Auto Wind Alignment Feature:
-* Aircraft carrier groups automatically separate from the fleet and turn into the wind and adjust speed to provide a user-specified WOD (Wind Over Deck), 26 knots by default, whenever aircraft of the same coalition are detected within 10 miles, below 2,500 feet (by default).  If no fleet, then they will just resume back to where they were going on their own.
+* Aircraft carrier groups automatically separate from the fleet and turn into the wind and adjust speed to provide a user-specified WOD (Wind Over Deck), 26 knots by default, whenever aircraft of the same coalition are detected within 10 miles, below 2,500 feet (by default).  If no fleet, then they will just resume back to where they were going on their own.  See video demo below.
 * Carrier groups will return to their fleet positions after all planes have left the airspace, if they were part of another fleet group.
 * No waypoint tricks are required in the Mission Editor. The script will override whatever waypoints you have set up and send the aircraft carrier group upwind, then will restore the original waypoint plan once all aircraft have left the airspace, and resume to the waypoint it was previously heading to.
 * When a player enters a carrier group's airspace, a text message appears letting pilots know the group is turning into the wind, and gives them the expected BRC and current altimeter setting.
@@ -131,6 +131,8 @@ There's not much to this that isn't already explained in the [Features](#carrier
 All you need to do is make sure your carrier has at least one waypoint to go to in the Mission Editor so that it moves along.  
 Everything about this feature is automatic.  
   
+See the demo here: https://youtu.be/T9TT-4r3I8Y?si=dV4cXj9tAhOY-8wo  
+    
 You can turn this feature on/off, or exclude specific groups or units if desired.  See [Step 7](#setup) above for the settings you need to define.  
   
 Optional, but recommended for realism:  
