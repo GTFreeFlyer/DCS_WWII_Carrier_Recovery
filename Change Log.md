@@ -6,6 +6,7 @@ v1.2
 Changes by GTFreeFlyer, April 18, 2026
   * Added functionality to return the carrier groups back to their original fleet position.
   * Added new global setting, NotificationSound, in case you have a different .ogg other than notification.ogg that you'd prefer to use. See readme.  
+  * BRC now contains leading zeroes for headings < 100
 -------------------------------------------------------------------------------------  
 v1.1  
 Changes by GTFreeFlyer, April 16, 2026  
