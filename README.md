@@ -95,7 +95,8 @@ OtherPlayerScoreDisplayTime = 15 --seconds, how long to display other players' o
 CarrierAutoTurn = true --true or false. If true the carrier will automatically turn into the wind when a plane enters the airspace defined above. If false, this feature is disabled.  
 CarrierTargetWOD = 26 --knots Wind Over Deck that you want the carriers to try and achieve when they automatically reposition themselves into the wind, if the CarrierAutoTurn above is true. Note: If your carrier group contains a slow ship like the Samuel Chase, etc., then it may prevent the entire ship group from reaching the desired speed.  
 ExcludeGroupNames = {"GroupNameToExclude1", "GroupNameToExclude2", "etc"} --list of carrier group names that the script should ignore  
-ExcludeUnitNames = {"UnitNameToExclude1", "UnitNameToExclude2", "etc"} --list of carrier unit names that the script should ignore. There's no need to specify a unit that is part of an excluded group in the setting above.  
+ExcludeUnitNames = {"UnitNameToExclude1", "UnitNameToExclude2", "etc"} --list of carrier unit names that the script should ignore. There's no need to specify a unit that is part of an excluded group in the setting above.
+NotificationSound = "notification.ogg" --if you have a different sound file you'd like to use here, then load it in same as step 6 above, and edit this setting as needed  
 ```
 
 ## Flying the Pattern  
