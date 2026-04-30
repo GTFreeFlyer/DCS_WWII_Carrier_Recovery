@@ -5,17 +5,17 @@ GTFreeFlyer's WWII Carrier Recovery Script for DCS World, created March 2026
 v2.0
 Changes by GTFreeFlyer, TBD
   * LSO feature (new):
-    ** Added LSO Lt. Leroy Flamingo. He will appear automatically as you come around from base to final. Make sure you study LSO signals. He will give guidance on left/right and up/down alignment, as well as remind you if your gear, flaps or hook are not down, and will give you a mandatory cut or waveoff signal at the end.
+  * Added LSO Lt. Leroy Flamingo. He will appear automatically as you come around from base to final. Make sure you study LSO signals. He will give guidance on left/right and up/down alignment, as well as remind you if your gear, flaps or hook are not down, and will give you a mandatory cut or waveoff signal at the end.  
      
-  * Carrier auto-wind alignment feature:
-    ** Carrier will ignore your existence if wings are folded on the deck. This means that when you spawn in with no one else around, the carrier will not turn into the wind until you spread your wings. Also, after returning from a sortie, the carrier will head back to fleet position after everyone is on deck with their wings folded.
-    ** Small crosswind over deck was blowing to port instead of starboard. Fixed.
+  * Carrier auto-wind alignment feature:  
+  * Carrier will ignore your existence if wings are folded on the deck. This means that when you spawn in with no one else around, the carrier will not turn into the wind until you spread your wings. Also, after returning from a sortie, the carrier will head back to fleet position after everyone is on deck with their wings folded.
+  * Small crosswind over deck was blowing to port instead of starboard. Fixed.
     
   * Grading feature:  
-    ** Relaxed penalites on one of the segments slightly.
-    ** Added 10 point penalty if you ignore the mandatory waveoff signal from the LSO and land anyway. You are not graded for anything else related to the LSO. He's there to help you, not hurt you.
-    ** Previoulsy, when holding altitude or speed, small fluctuations are natural and you would be penalized any time these values would change in the direction opposite of the final target. This update adds a small filter for tiny movements to reduce the total penalty accumulation.
-    ** Converting back and forth from magnetic headings to true headings was adding instead of subtracting the declination, resulting in a small mismatch of values used for scoring. Fixed.
+  * Relaxed penalites on one of the segments slightly.
+  * Added 10 point penalty if you ignore the mandatory waveoff signal from the LSO and land anyway. You are not graded for anything else related to the LSO. He's there to help you, not hurt you.
+  * Previoulsy, when holding altitude or speed, small fluctuations are natural and you would be penalized any time these values would change in the direction opposite of the final target. This update adds a small filter for tiny movements to reduce the total penalty accumulation.
+  * Converting back and forth from magnetic headings to true headings was adding instead of subtracting the declination, resulting in a small mismatch of values used for scoring. Fixed.
 
   * All documentation updated at <https://github.com/GTFreeFlyer/DCS_WWII_Carrier_Recovery>
 
