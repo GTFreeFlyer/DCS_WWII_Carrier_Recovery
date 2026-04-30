@@ -91,11 +91,14 @@ AirspaceRadius = 10 --nautical miles, radius of the airspace around the carrier 
 AirspaceCeiling = 2500 --feet, ceiling of the airspace, as defined in the AirspaceRadius setting above  
 ScoreSummaryDisplayTime = 60 --seconds, how long to display the score summary after landing, boltering, or taking off again  
 DisplayOtherScores = true --boolean, whether to display a one-liner of other players' scores to each player after they land, bolter, or take off again. If false, players will only see their own score summary.  
-OtherPlayerScoreDisplayTime = 15 --seconds, how long to display other players' one-liner score summaries to all players  
+OtherPlayerScoreDisplayTime = 15 --seconds, how long to display other players' one-liner score summaries to all players
+ShowLSO = true --if true, the script will display LSO signals to the player based on their performance in each flight segment. If false, no LSO signals will be shown.  
 CarrierAutoTurn = true --true or false. If true the carrier will automatically turn into the wind when a plane enters the airspace defined above. If false, this feature is disabled.  
-CarrierTargetWOD = 26 --knots Wind Over Deck that you want the carriers to try and achieve when they automatically reposition themselves into the wind, if the CarrierAutoTurn above is true. Note: If your carrier group contains a slow ship like the Samuel Chase, etc., then it may prevent the entire ship group from reaching the desired speed.  
+CarrierTargetWOD = 26 --knots Wind Over Deck that you want the carriers to try and achieve when they automatically reposition themselves into the wind, if the CarrierAutoTurn above is true. Note: If your carrier group contains a slow ship like the Samuel Chase, etc., then it may prevent the entire ship group from reaching the desired speed.
+SteeringOffset = 3 --degrees. We apply an offset per historical references showing that a slight crosswind was maintained so that turbulence off the island did not interfere with the landing aircraft. A positive value indicates the ship steers to the right of the oncoming wind.
 ExcludeGroupNames = {"GroupNameToExclude1", "GroupNameToExclude2", "etc"} --list of carrier group names that the script should ignore  
 ExcludeUnitNames = {"UnitNameToExclude1", "UnitNameToExclude2", "etc"} --list of carrier unit names that the script should ignore. There's no need to specify a unit that is part of an excluded group in the setting above.
+FleetDetectDistance = 10 --nautical miles. Distance at mission start between a carrier group and another fleet group at which a carrier will be assumed to be part of the fleet
 NotificationSound = "notification.ogg" --if you have a different sound file you'd like to use here, then load it in same as step 6 above, and edit this setting as needed  
 ```
 
