@@ -29,11 +29,16 @@ The script is not yet available to public. You will not find it in this reposito
 * Carrier landing pattern is in accordance with USF-77, "Current Tactical Orders, Aircraft Carriers U.S. Fleet", March 1941
 * Detects which wire you caught, bolters, noseovers, skidding to a stop, etc.
 * Some additional scoring parameters have been added to help make you a better pilot
+### Landing Signal Officer (LSO) Feature:
+* Lt. Leroy Flamingo is here to help you out with landings. He'll automatically appear when you come around from base to final.
+* The LSO will give you up/down, left/right alignment and speed signals. He'll also let you know if your gear, flaps, or hook isn't down.
+* The timing of the LSO's signals are dynamic and always take your current speed, position, descent rate, etc. into account.
 ### Carrier Auto Wind Alignment Feature:
 * Aircraft carrier groups automatically separate from the fleet and turn into the wind and adjust speed to provide a user-specified WOD (Wind Over Deck), 26 knots by default, whenever aircraft of the same coalition are detected within 10 miles, below 2,500 feet (by default).  If no fleet, then they will just resume back to where they were going on their own.  See video demo below.
-* Carrier groups will return to their fleet positions after all planes have left the airspace, if they were part of another fleet group.
+* Carrier groups will return to their fleet positions after all planes have left the airspace, if they were part of a separate fleet group as defined in the editor.
 * No waypoint tricks are required in the Mission Editor. The script will override whatever waypoints you have set up and send the aircraft carrier group upwind, then will restore the original waypoint plan once all aircraft have left the airspace, and resume to the waypoint it was previously heading to.
 * When a player enters a carrier group's airspace, a text message appears letting pilots know the group is turning into the wind, and gives them the expected BRC and current altimeter setting.
+* Planes on deck are ignored and not counted in the airspace as long as their wings are folded. You may spawn in and then you'll see the boat turn into the wind when you unfold your wings. Or, after returning from a sortie you'll see the carrier return to fleet position one minute after wings are folded.
 * Works by taking a measurement of the current wind speed, wind direction, temperature and pressure at the carrier's current location at the time it needs to turn into the wind.
 * The actual alignment into the wind is not direct, but instead is 5 degrees off to the right in accordance with historical documentation showing this was done to keep turbulence from the island away from the landing area.
 * This feature now gives mission designers the flexibily to do whatever they want with wind, cyclones, etc, along with keeping a carrier group orbiting in a small area at slow speed.  Previously, designers had to keep wind constant across the entire map and send carrier groups in a straight line in order to provide consistent WOD conditions.
@@ -48,9 +53,12 @@ The script is not yet available to public. You will not find it in this reposito
 ## Download
 Source: https://github.com/GTFreeFlyer/DCS_WWII_Carrier_Recovery
    * Please click the Watch button and Star button at the top of the GitHub page to receive notices when there are updates.  
-   * Please click Issues at the top of the GitHub page to report bugs and request new features.  
-1. From the GitHub page, click Releases on the right side, and click DCSWWIICarrierRecovery_v1.zip to download it. (You do not need to download the Source code zip or tar.gz).    
-2. Extract the .zip anywhere you like on your PC
+   * Please click Issues at the top of the GitHub page to report bugs and request new features.
+
+1. From the GitHub page, click Releases on the right side, and click DCSWWIICarrierRecovery_v1.zip to download it. (You do not need to download the Source code zip or tar.gz).  
+     
+2. Extract the .zip anywhere you like on your PC   
+  
 3. If you don't already have MIST downloaded to your PC, I have included it in the .zip for you, or get the latest version from https://github.com/mrSkortch/MissionScriptingTools if you use MIST for other things. You only need the single file, mist.lua.  There's no need to download the whole .zip from mrSkortch's GitHub. Click on mist.lua from the list of files you see; this will bring you to the page that shows all 9500+ lines of code.  Press ctrl+shift+S to save the file somewhere on your PC.
 
 ## Installation  
@@ -60,15 +68,20 @@ Source: https://github.com/GTFreeFlyer/DCS_WWII_Carrier_Recovery
 TYPE: ONCE, NAME: Load MIST  
 CONDITIONS: TIME MORE, 1 second  
 ACTION 1: DO SCRIPT FILE - Navigate to where you saved mist.lua and select it.  
-
+  
 5. Create the 2nd trigger:  
 TYPE: ONCE, NAME: Load WWII Carrier Recovery Script  
 CONDITIONS: TIME MORE, 5 seconds  (we want to wait a few seconds to make sure all the units have populated in the mission)  
 ACTIONS: DO SCRIPT FILE - Navigate to the extracted DCSWWIICarrierRecovery folder and select 'GTFreeFlyers WWII Recovery v1.0.lua' (or whatever the latest version number is).   
 You do not need to open or edit the .lua file. Just load it into the mission.  
-
-6. Create the 3rd trigger (optional, and recommended, if you want the sound effects):  
-TYPE: ONCE, NAME: Load Sounds  
+  
+6. Create the 3rd trigger:  
+TYPE: ONCE, NAME: Load LSO Images  
+CONDITIONS: FLAG EQUALS, Flag: 999, Value: 999 (we are creating a flag that will never execute, but this is what is required to load the images into the .miz)  
+ACTIONS: PICTURE TO ALL - Navigate to the extracted DCSWWIICarrierRecovery folder and select one of the .png files from LSO images folder. Create another action and select another .png from that folder. Repeat until all .png files are loaded (approx. 30 images, 30 actions).  
+  
+7. Create the 4th trigger (optional, and recommended, if you want the sound effects):  
+TYPE: ONCE, NAME: Load Sounds
 CONDITIONS: FLAG EQUALS, Flag: 999, Value: 999 (we are creating a flag that will never execute, but this is what is required to load the sounds into the .miz)  
 ACTIONS: SOUND TO ALL - Navigate to the extracted DCSWWIICarrierRecovery folder and select one of the .ogg files from soundEffects folder. Create another action and select another .ogg from that folder. Repeat until all .ogg files are loaded.    
   
@@ -77,8 +90,8 @@ Wait, I said no setup is required!
 Well, that's true, but I know people like to tweak some things on their own, so I made it possile to adjust a few things.  This step is completely optional.  
 I recommend skipping this entirely and just using the default values so that the behavior of the script matches the documentation.  If you still feel the need to change things later on after you get used to the script, go ahead.  
 
-7.  Create a 1.5th (is that a real number?) trigger:  
-(This must get loaded before the 2nd trigger above, i.e. before the lua script loads)   
+8. Create a 1.5th (is that a real number?) trigger:  
+(This must get loaded before the 2nd trigger above (step 5), i.e. before the lua script loads)   
 TYPE: ONCE, NAME: WWII Carrier Recovery Settings   
 CONDITIONS: TIME MORE, 4 seconds  (this must load after MIST, and before the main script)   
 ACTIONS: DO SCRIPT - Then copy/paste the lines below into the text box, and adjust values as desired.  Make sure each parameter begins on a new line.  What you see below are the default, and suggested values.  You can pick and choose which lines you want to copy, and they do not have to be in the same order as below. Each line below will override the default value in the script.  In other words, if you like the default values shown below, there's no need to copy the line of code into your settings.
