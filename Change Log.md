@@ -3,7 +3,7 @@
 GTFreeFlyer's WWII Carrier Recovery Script for DCS World, created March 2026  
 -------------------------------------------------------------------------------------  
 v2.0  
-Changes by GTFreeFlyer, TBD  
+Changes by GTFreeFlyer, May 3, 2026  
 ---LSO feature (new):---  
   * Added LSO Lt. Leroy Flamingo. He will appear automatically as you come around from base to final. Make sure you study LSO signals. He will give guidance on left/right and up/down alignment, as well as remind you if your gear, flaps or hook are not down, and will give you a mandatory cut or waveoff signal at the end.  
 ------------------------      
