@@ -14,7 +14,7 @@ The script is not yet available to public. You will not find it in this reposito
 * [Installation](#installation)
 * [Flying the Pattern](#flying-the-pattern)
 * [Technical Info. for Scoring](#technical-info-for-scoring)
-* [Landing Signal Officer (LSO)](#landing-signal-officer-lso-feature)
+* [Landing Signal Officer (LSO)](#landing-signal-officer-lso-lt-leroy-flamingo)
 * [Carrier Auto Wind Alignment](#carrier-auto-wind-alignment)
 * [Contact Info](#contact-info)
 * [Forum Thread](#forum-thread)
