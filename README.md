@@ -14,6 +14,7 @@ The script is not yet available to public. You will not find it in this reposito
 * [Installation](#installation)
 * [Flying the Pattern](#flying-the-pattern)
 * [Technical Info. for Scoring](#technical-info-for-scoring)
+* [Landing Signal Officer (LSO)](#landing-signal-officer-lso-feature)
 * [Carrier Auto Wind Alignment](#carrier-auto-wind-alignment)
 * [Contact Info](#contact-info)
 * [Forum Thread](#forum-thread)
@@ -128,22 +129,27 @@ Video tutorial by vCTF-58: https://youtu.be/XJ7T8LTq7Y0?si=9prA_tbjedNAvJGW
 ![Log](screenshots/log.jpg)  
 
 
-![1](BriefingSlides/Slide1.jpg)
-![2](BriefingSlides/Slide2.jpg)
-![3](BriefingSlides/Slide3.jpg)
-![4](BriefingSlides/Slide4.jpg)
-![5](BriefingSlides/Slide5.jpg)
-![6](BriefingSlides/Slide6.jpg)
-![7](BriefingSlides/Slide7.jpg)
-![8](BriefingSlides/Slide8.jpg)
-![9](BriefingSlides/Slide9.jpg)
-![10](BriefingSlides/Slide10.jpg)
-![11](BriefingSlides/Slide11.jpg)
-![12](BriefingSlides/Slide12.jpg)
+![1](BriefingSlides/Slide2.jpg)
+![2](BriefingSlides/Slide3.jpg)
+![3](BriefingSlides/Slide4.jpg)
+![4](BriefingSlides/Slide5.jpg)
+![5](BriefingSlides/Slide6.jpg)
+![6](BriefingSlides/Slide7.jpg)
+![7](BriefingSlides/Slide8.jpg)
+![8](BriefingSlides/Slide9.jpg)
+![9](BriefingSlides/Slide10.jpg)
+![10](BriefingSlides/Slide11.jpg)
+![11](BriefingSlides/Slide12.jpg)
+![12](BriefingSlides/Slide13.jpg)
 
 ## Technical Info. for Scoring
-![13](BriefingSlides/Slide13.jpg)
-![14](BriefingSlides/Slide14.jpg)
+![13](BriefingSlides/Slide14.jpg)
+![14](BriefingSlides/Slide15.jpg)
+![15](BriefingSlides/Slide16.jpg)
+
+## Landing Signal Officer (LSO) Lt. Leroy Flamingo
+The LSO will appear automatically as you are at the 90 coming around for final. He's there to help get you aligned, and also double-checks your aircraft configuration for landing. Learn the signals below.
+![16](BriefingSlides/Slide1.jpg)
 
 ## Carrier Auto Wind Alignment
 There's not much to this that isn't already explained in the [Features](#carrier-auto-wind-alignment-feature) above.  
