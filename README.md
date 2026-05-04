@@ -79,7 +79,7 @@ You do not need to open or edit the .lua file. Just load it into the mission.
 6. Create the 3rd trigger:  
 TYPE: ONCE, NAME: Load LSO Images  
 CONDITIONS: FLAG EQUALS, Flag: 999, Value: 999 (we are creating a flag that will never execute, but this is what is required to load the images into the .miz)  
-ACTIONS: PICTURE TO ALL - Navigate to the extracted DCSWWIICarrierRecovery folder and select one of the .png files from LSO images folder. Create another action and select another .png from that folder. Repeat until all .png files are loaded (approx. 30 images, 30 actions).  
+ACTIONS: PICTURE TO ALL - Navigate to the extracted DCSWWIICarrierRecovery folder and select one of the .png files from LSO images folder. Create another action and select another .png from that folder. Repeat until all .png files are loaded (approx. 32 images, 32 actions).  
   
 7. Create the 4th trigger (optional, and recommended, if you want the sound effects):  
 TYPE: ONCE, NAME: Load Sounds
