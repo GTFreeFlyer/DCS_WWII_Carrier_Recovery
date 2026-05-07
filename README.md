@@ -86,6 +86,8 @@ TYPE: ONCE, NAME: Load Sounds
 CONDITIONS: FLAG EQUALS, Flag: 999, Value: 999 (we are creating a flag that will never execute, but this is what is required to load the sounds into the .miz)  
 ACTIONS: SOUND TO ALL - Navigate to the extracted DCSWWIICarrierRecovery folder and select one of the .ogg files from soundEffects folder. Create another action and select another .ogg from that folder. Repeat until all .ogg files are loaded.    
   
+8. Optional: If you want a handy reference for all the LSO signals, grab the kneeboard from the Kneeboard folder and install it as usual in your Saved Games/DCS/Kneeboard folder.  
+   
 ## Setup  
 Wait, I said no setup is required!  
 Well, that's true, but I know people like to tweak some things on their own, so I made it possile to adjust a few things.  This step is completely optional.  
