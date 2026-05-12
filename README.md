@@ -1,4 +1,6 @@
-# GTFreeFlyer's WWII Carrier Recovery Script for DCS World
+# GTFreeFlyer's WWII Carrier Recovery Script for DCS World  
+
+## OVERVIEW:  
 This script is for DCS World and has three main features:  
   1. It will grade your landings on the WWII Essex Carriers only (this is not for modern carriers)
   2. It provides an LSO that appears on your screen prior to landing
