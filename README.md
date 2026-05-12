@@ -1,7 +1,8 @@
 # GTFreeFlyer's WWII Carrier Recovery Script for DCS World
-This script is for DCS World and has two main functions:  
+This script is for DCS World and has three main features:  
   1. It will grade your landings on the WWII Essex Carriers only (this is not for modern carriers)
-  2. It will make aircraft carrier groups automatically turn into the wind and adjust speed to provide an appropriate WOD (Wind Over Deck) whenever aircraft of the same coalition are detected nearby
+  2. It provides an LSO that appears on your screen prior to landing
+  3. It will make aircraft carrier groups automatically turn into the wind and adjust speed to provide an appropriate WOD (Wind Over Deck) whenever aircraft of the same coalition are detected nearby
   
 More details are below...
 
@@ -93,7 +94,7 @@ Wait, I said no setup is required!
 Well, that's true, but I know people like to tweak some things on their own, so I made it possile to adjust a few things.  This step is completely optional.  
 I recommend skipping this entirely and just using the default values so that the behavior of the script matches the documentation.  If you still feel the need to change things later on after you get used to the script, go ahead.  
 
-8. Create a 1.5th (is that a real number?) trigger:  
+9. Create a 1.5th (is that a real number?) trigger:  
 (This must get loaded before the 2nd trigger above (step 5), i.e. before the lua script loads)   
 TYPE: ONCE, NAME: WWII Carrier Recovery Settings   
 CONDITIONS: TIME MORE, 4 seconds  (this must load after MIST, and before the main script)   
