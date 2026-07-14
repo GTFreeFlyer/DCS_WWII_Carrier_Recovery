@@ -154,7 +154,7 @@ Video tutorial by vCTF-58: https://youtu.be/XJ7T8LTq7Y0?si=9prA_tbjedNAvJGW
 
 ## Landing Signal Officer (LSO) Lt. Leroy Flamingo
 The LSO will appear automatically as you are at the 90 coming around for final. He's there to help get you aligned, and also double-checks your aircraft configuration for landing. Learn the signals below.
-![16](BriefingSlides/Slide1.jpg)
+![LSO](BriefingSlides/Slide1.jpg)
 
 ## Carrier Auto Wind Alignment
 There's not much to this that isn't already explained in the [Features](#carrier-auto-wind-alignment-feature) above.  
@@ -175,7 +175,7 @@ If you place the carrier group within 10 miles (default value, adjustable by Fle
 ## Contact Info:
 Contact GTFreeFlyer (Discord or ED Forums) with any questions.  My Discord profile has a link to GT's Runway where you can engage in discussion, and receive update notices, regarding any of my content produced, or use the QR below.
 
-![15](BriefingSlides/Slide15.jpg)
+![17](BriefingSlides/Slide17.jpg)
 
 ## Forum Thread:  
 https://forum.dcs.world/topic/387076-wwii-carrier-recovery-by-gtfreeflyer-grading-script/
