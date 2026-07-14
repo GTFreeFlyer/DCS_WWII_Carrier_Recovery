@@ -2,6 +2,10 @@
 -------------------------------------------------------------------------------------  
 GTFreeFlyer's WWII Carrier Recovery Script for DCS World, created March 2026  
 -------------------------------------------------------------------------------------  
+v2.1  
+Changes by GTFreeFlyer, June 13, 2026
+  * LSO pictures no longer fade in and out.  Thanks ED for listening to my wish list post!
+-------------------------------------------------------------------------------------  
 v2.0  
 Changes by GTFreeFlyer, May 3, 2026  
 ---LSO feature (new):---  
