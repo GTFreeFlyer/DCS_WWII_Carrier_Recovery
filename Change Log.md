@@ -2,9 +2,13 @@
 -------------------------------------------------------------------------------------  
 GTFreeFlyer's WWII Carrier Recovery Script for DCS World, created March 2026  
 -------------------------------------------------------------------------------------  
+v2.3
+Changes by GTFreeFlyer, August 31, 2026   
+  * New option to set score display times to zero to hide them completely.  
+-------------------------------------------------------------------------------------  
 v2.1  
 Changes by GTFreeFlyer, June 13, 2026
-  * LSO pictures no longer fade in and out.  Thanks ED for listening to my wish list post!
+  * LSO pictures no longer fade in and out.  Thanks ED for listening to my wish list post!  
 -------------------------------------------------------------------------------------  
 v2.0  
 Changes by GTFreeFlyer, May 3, 2026  
