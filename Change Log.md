@@ -2,6 +2,18 @@
 -------------------------------------------------------------------------------------  
 GTFreeFlyer's WWII Carrier Recovery Script for DCS World, created March 2026  
 -------------------------------------------------------------------------------------  
+v2.6
+Changes by GTFreeFlyer, October 16, 2026   
+  * Added new user settings to allow random WOD and steering offset to simulate human error and consistency in the ability to keep the boat pointed perfectly into the wind.
+-------------------------------------------------------------------------------------  
+v2.5
+Changes by GTFreeFlyer, October 8, 2026   
+  * Found that image duration <1 causes pictures to freeze. This occured with Leroy's waveoff signal.  Fixed.
+-------------------------------------------------------------------------------------  
+v2.4
+Changes by GTFreeFlyer, September 28, 2026   
+  * Minor fix. After the last change where we turned off the grading, I forgot to turn off the message "Grading script active" when planes fly thru the initial trigger zone on the initial pass. Fixed
+-------------------------------------------------------------------------------------  
 v2.3
 Changes by GTFreeFlyer, August 31, 2026   
   * New option to set score display times to zero to hide them completely.  

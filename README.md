@@ -111,9 +111,13 @@ AirspaceCeiling = 2500 --feet, ceiling of the airspace, as defined in the Airspa
 ScoreSummaryDisplayTime = 60 --seconds, how long to display the score summary after landing, boltering, or taking off again. Set to zero to hide completely.  
 OtherPlayerScoreDisplayTime = 15 --seconds, how long to display other players' one-liner score summaries to all players. Set to zero to hide completely.  
 ShowLSO = true --if true, the script will display LSO signals to the player based on their performance in each flight segment. If false, no LSO signals will be shown.  
-CarrierAutoTurn = true --true or false. If true the carrier will automatically turn into the wind when a plane enters the airspace defined above. If false, this feature is disabled.  
+CarrierAutoTurn = true --true or false. If true the carrier will automatically turn into the wind when a plane enters the airspace defined above. If false, this feature is disabled.
+RandomWOD = true --boolean, if true then the wind over deck will be a value between WODLow and WODHi defined below, otherwise value is equal to CarrierTargetWOD, defined below.
+RandomWODLow = 26 --knots. This is the lower bound value for a randomly chosen wind over deck
+RandomWODHi = 34 --knots. This is the upper bound value for a randomly chosen wind over deck
 CarrierTargetWOD = 26 --knots Wind Over Deck that you want the carriers to try and achieve when they automatically reposition themselves into the wind, if the CarrierAutoTurn above is true. Note: If your carrier group contains a slow ship like the Samuel Chase, etc., then it may prevent the entire ship group from reaching the desired speed.
 SteeringOffset = 3 --degrees. We apply an offset per historical references showing that a slight crosswind was maintained so that turbulence off the island did not interfere with the landing aircraft. A positive value indicates the ship steers to the right of the oncoming wind.
+SteeringOffsetTolerance = 2 --degrees. A random value from 0 to this number will be chosen and added or subtracted from the steeringOffset to simulate human error & precision. For example, if steeringOffset=3 and this value = 2, then each time the boat turns into the wind, the offset will be a random value  in the range of 3 deg +/- 2 deg
 ExcludeGroupNames = {"GroupNameToExclude1", "GroupNameToExclude2", "etc"} --list of carrier group names that the script should ignore  
 ExcludeUnitNames = {"UnitNameToExclude1", "UnitNameToExclude2", "etc"} --list of carrier unit names that the script should ignore. There's no need to specify a unit that is part of an excluded group in the setting above.
 FleetDetectDistance = 10 --nautical miles. Distance at mission start between a carrier group and another fleet group at which a carrier will be assumed to be part of the fleet
